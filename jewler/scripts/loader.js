@@ -8,15 +8,15 @@ window.addEventLostener("load", function(){
 		{
 			// these files are always loaded
 			load : [
-			    "scripts/sizzle.js",
+			    "scripts/jquery-sizzle/src/sizzle.js",
 			    "scripts/dom.js",
 			    "scripts/gamw.js"
 			],
 			// called when all files have finished loading 
 			// and executing
 			complete : function() {
-				// console.log("All files loaded!");
+				console.log("All files loaded!");
 			}
 		}
-		]);
+	]);
 }, false); 

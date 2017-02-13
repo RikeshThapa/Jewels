@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Audiowide";
+	font-weight: normal;
+	font-style: normal;
+	src : url("fonts/Audiowide/Audiowide-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Press_Start";
+	font-weight: normal;
+	font-style: normal;
+	src : url("fonts/Press_Start_2P/Press_Start_2P-Regular.ttf") format("truetype");
+}

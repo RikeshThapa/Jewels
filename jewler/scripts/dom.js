@@ -30,7 +30,7 @@ jewel.dom = (function() {
 	}
 
 	return {
-	    $ : #,
+	    $ : $,
 	    hasClass : hasClass,
 	    addClass : addClass,
 	    removeClass : removeClass

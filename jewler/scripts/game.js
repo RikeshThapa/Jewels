@@ -4,8 +4,8 @@ jewel.game = (function() {
 
 	// hide the active screen (if any) and show the screen with the specified id
 
-	function showScreen(screenID) {
-	    var activeScreen(screenID) = $("#game .screen.active")[0]
+	function showScreen(screenId) {
+	    var activeScreen = $("#game .screen.active")[0],
 	        screen = $("#" + screenId)[0];
 	    if (activeScreen) {
 	        dom.removeClass(screen, "active");

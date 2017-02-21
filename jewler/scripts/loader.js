@@ -1,4 +1,8 @@
-var jewel = {};
+var jewel = {
+	//by adding another level to the namespace, we can keep the the screen modules together
+	// instead of placing screen modules directly on the top-level jewel namespace
+	screens : {}
+};
 
 // wait until main document is loaded
 window.addEventListener("load", function(){
@@ -28,6 +32,8 @@ window.addEventListener("load", function(){
 		$.getScript("scripts/jquery-sizzle/src/sizzle.js"),
 		$.getScript("scripts/dom.js"),
 		$.getScript("scripts/game.js"),
+		$.getScript("scripts/screen.splash.js"),
+		$.getScript("scripts/screen.main-menu.js"),
 		$.Deferred(function(deferred){
 			$(deferred.resolve);
 		})
@@ -36,41 +42,3 @@ window.addEventListener("load", function(){
 		jewel.game.showScreen("splash-screen");
 	});
 }, false); 
-
-
-	/*if(true){
-		jQuery.getScript("scripts/jquery-sizzle/src/sizzle.js")
-		.done(function(){
-			console.log('Script Loaded!');
-		})
-		.fail(function(){
-			console.log('Scrip Did Not Load!');
-			success = false;
-		});
-
-		jQuery.getScript("scripts/dom.js")
-		.done(function(){
-			console.log('Script Loaded!');
-		})
-		.fail(function(){
-			console.log('Scrip Did Not Load!');
-			success = false;
-		});
-
-		jQuery.getScript("scripts/game.js")
-		.done(function(){
-			console.log('Script Loaded!');
-		})
-		.fail(function(){
-			console.log('Scrip Did Not Load!');
-			success = false;
-		});
-		console.log("success!")
-	}
-	else {
-		console.log('Something is wrong with your browser');
-	}
-
-	if (success == true){
-		
-	}*/

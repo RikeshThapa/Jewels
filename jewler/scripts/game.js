@@ -13,7 +13,7 @@ jewel.game = (function() {
 	    dom.addClass(screen, "active");
 
 	    //run the screen module
-	    jewel.screens[sreenId].run();
+	    jewel.screens[screenId].run();
 	    //display the screen html
 	    dom.addClass(screen, "active");
 	}

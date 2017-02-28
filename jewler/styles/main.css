@@ -32,9 +32,9 @@ body{
 	padding-top: 2.5em;
 }
 
-#splash-screen #continue{
+#continue{
 	cursor: pointer;
-	font-size: 0.75em;
+	font-size: 0.4em;
 }
 
 .logo {

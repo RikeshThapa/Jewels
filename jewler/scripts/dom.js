@@ -32,6 +32,7 @@ jewel.dom = (function() {
 	function bind(element, event, handler) {
 		if (typeof element == "string"){
 			element = $(element)[0];
+			alert(element)
 		}
 		element.addEventListener(event, handler, false)
 	}

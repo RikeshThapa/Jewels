@@ -1,4 +1,4 @@
-// exposing method to setup initial behavior
+// exposing method to setup initial behavior 
 
 jewel.screens["splash-screen"] = (function(){
 	var game = jewel.game,
